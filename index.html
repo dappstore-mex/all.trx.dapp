@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALL TRX DAPP STORE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  overflow: hidden;
+}
+
+/* Background animasi */
+body::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveBg 10s linear infinite;
+}
+
+@keyframes moveBg {
+  from { transform: translate(0,0); }
+  to { transform: translate(-40px,-40px); }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease;
+  color: white;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* FOTO PROFIL */
+.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+  transition: 0.3s;
+}
+
+.profile:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255,255,255,0.8);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Button */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Warna */
+.ig { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
+.tt { background: linear-gradient(45deg, #000000, #333333); }
+.wa { background: linear-gradient(45deg, #25D366, #128C7E); }
+
+/* Hover */
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  top: 0;
+  left: -100%;
+  transition: 0.3s;
+}
+
+.link:hover::after {
+  left: 0;
+}
+
+.link:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.link i {
+  font-size: 18px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <!-- FOTO PROFIL -->
+    <img src="https://adriancloud.my.id/files/file-1778058130.jpeg" class="profile">
+
+    <h1>𝘼𝙇𝙇 𝙏𝙍𝙓 𝘿𝘼𝙋𝙋 𝙎𝙏𝙍</h1>
+
+    <a href="https://adriancloud.my.id/files/file-1778059886.jpeg" class="link ig" target="_blank">
+      <i class="#"></i>LIST PANEL PTERODACTLY
+    </a>
+
+    <a href="https://adriancloud.my.id/files/file-1778060122.jpeg" class="link ig" target="_blank">
+      <i class="#"></i> LIST SUNTIK SOSMED
+    </a>
+
+    <a href="https://adriancloud.my.id/files/file-1778060270.jpeg" class="link ig" target="_blank">
+      <i class="#"></i>LIST APLIKASI PREM/PRO
+    </a>
+
+   <a href="https://adriancloud.my.id/files/file-1778060475.jpeg" class="link ig" target="_blank">
+      <i class="#"></i>LIST SEWA BOT/ASISTEN WA
+    </a>
+
+    <a href="https://adriancloud.my.id/files/file-1778060587.jpeg" class="link ig" target="_blank">
+      <i class="#"></i>ALL TRX DAPP STORE
+    </a>
+
+    <a href="https://wa.me/6289678380896" class="link wa" target="_blank">
+      <i class="fab fa-whatsapp"></i> ORDER CHAT ADMIN
+    </a>
+
+    <a href="https://dappstore-mex.github.io/sosmed/" class="link tt" target="_blank">
+      <i class="#"></i> BACK KE SOSMED
+    </a>
+
+
+  </div>
+</div>
+
+</body>
+</html>
